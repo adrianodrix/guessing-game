@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --color-text: rgba(52, 53, 91, 0.80);
+    --color-title: #34355B;
+    --color-button: #7879F1;
+    --color-input: #DCE2E9;
+}
+
+html, body, input, button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(108deg, #C2E9FB 0%, #A1C4FD 100%);
+    
+    color: var(--color-text);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    width: min(26rem, 90%);
+    display: flex;
+    padding: 3rem 4rem 4rem 4rem;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 0.375rem;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    margin-top: -12rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-title);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 1rem;
+}
+
+form {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, button {
+    border: 0;
+    padding: 1rem;
+}
+
+input {
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    background: var(--color-input);
+    font-weight: bold;
+}
+
+button {
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+    background: var(--color-button);
+    color: white;
+    width: 6rem;
+    font-weight: bold;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+.screen2 button {
+    border-radius: 0.25rem;
+    width: 8rem;
+}
+
+button:hover {
+    background: #6666e6;
+}
+
+.hide {
+    display: none;
+}
